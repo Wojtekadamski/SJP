@@ -1,7 +1,6 @@
 __author__ =  "Wojciech Adamksi 242359"
 def pyramid(blocks):
-    tmp = 0
-    i=1
+    tmp, i = 0, 1
     while blocks>=i:
         i,blocks, tmp = i+1, blocks-i, tmp+1
     return tmp

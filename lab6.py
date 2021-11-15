@@ -29,6 +29,8 @@ def test_zadanie_3_2_1_15():
 if __name__ == '__main__':
     test_zadanie_3_2_1_14()
     test_zadanie_3_2_1_15()
+    #print("zadanie_3_2_1_14: ", zadanie_3_2_1_14(int(input("podaj liczbę klocków: "))))
+    #print("zadanie_3_2_1_15: ", zadanie_3_2_1_15(int(input("podaj liczbę początkową: "))))
     print(__author__)
     # oczywiście w zadaniu jest podane żeby dać input(), ale w ramach testów wolałem użyć pytestu.
     # Mam nadzieję że nie będzie to negatywnie wpływało na ocenę

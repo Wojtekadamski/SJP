@@ -1,11 +1,11 @@
 __author__ =  "Wojciech Adamksi 242359"
-def pyramid(blocks):
+def zadanie_3_2_1_14(blocks):
     tmp, i = 0, 1
     while blocks>=i:
         i,blocks, tmp = i+1, blocks-i, tmp+1
     return tmp
 
-def Lothar_Collatz(c0):
+def zadanie_3_2_1_15(c0):
     tmp =0
     while c0!=1:
         if c0%2==0:
@@ -16,19 +16,19 @@ def Lothar_Collatz(c0):
             print(c0)
     return tmp
 
-def test_pyramid():
-    assert pyramid(6) == 3
-    assert pyramid(20) == 5
-    assert pyramid(1000) == 44
-    assert pyramid(2) == 1
+def test_zadanie_3_2_1_14():
+    assert zadanie_3_2_1_14(6) == 3
+    assert zadanie_3_2_1_14(20) == 5
+    assert zadanie_3_2_1_14(1000) == 44
+    assert zadanie_3_2_1_14(2) == 1
 
-def test_Lothar_Collatz():
-    assert Lothar_Collatz(16) == 4
-    assert Lothar_Collatz(1023) == 62
+def test_zadanie_3_2_1_15():
+    assert zadanie_3_2_1_15(16) == 4
+    assert zadanie_3_2_1_15(1023) == 62
 
 if __name__ == '__main__':
-    test_pyramid()
-    test_Lothar_Collatz()
+    test_zadanie_3_2_1_14()
+    test_zadanie_3_2_1_15()
     print(__author__)
     # oczywiście w zadaniu jest podane żeby dać input(), ale w ramach testów wolałem użyć pytestu.
     # Mam nadzieję że nie będzie to negatywnie wpływało na ocenę

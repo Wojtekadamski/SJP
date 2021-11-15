@@ -1,10 +1,17 @@
 __author__ =  "Wojciech Adamksi 242359"
+"""
+Zadanie pierwsze polega nazwróceniu liczby pięter piramidy utworzonejaz podanej ilości bloków. 
+Bloki nieużyte są pomijane
+"""
 def zadanie_3_2_1_14(blocks):
     tmp, i = 0, 1
     while blocks>=i:
         i,blocks, tmp = i+1, blocks-i, tmp+1
     return tmp
-
+"""
+zadanie drugie bierze daną liczbę i modyfikuje ją według hipotezy Lothara-Collatza
+funkcja wyświetla kolejne kroki i zwraca liczbę kroków 
+"""
 def zadanie_3_2_1_15(c0):
     tmp =0
     while c0!=1:
